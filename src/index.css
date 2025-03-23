@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background-primary: 255 255 255;
+    --background-secondary: 245 245 245;
+    --background-accent: 229 229 229;
+    --text-primary: 78 203 133;
+    --text-secondary: 87 82 82;
+    --accent-primary: 0 0 0;
+  }
+
+  .dark {
+    --background-primary: 0 0 0;
+    --background-secondary: 17 17 17;
+    --background-accent: 26 26 26;
+    --text-primary: 117 251 157;
+    --text-secondary: 163 163 163;
+    --accent-primary: 255 255 255;
+  }
+
+  body {
+    @apply bg-gradient-radial from-background-primary via-background-secondary to-background-primary text-text-secondary selection:bg-accent-primary/30;
+  }
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+@layer components {
+  .link-underline {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-0 after:bg-accent-primary after:transition-all hover:after:w-full;
+  }
+}
