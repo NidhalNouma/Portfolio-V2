@@ -28,12 +28,12 @@ export function ExpertiseCard({
         {/* Right side - Content */}
         <div className="flex-1 space-y-6">
           <div>
-            <h3 className="text-base text-text-primary font-semibold inline-flex items-center gap-2">
+            <h3 className="text-base text-text-primary font-semibold inline-flex items-center gap-2 font-mono">
               {title}
               <span className="text-text-secondary">·</span>
               <a
                 href={companyUrl}
-                className="text-accent-primary hover:text-accent-primary/80 transition-colors inline-flex items-center gap-1"
+                className="text-accent-primary hover:text-accent-primary/80 transition-colors font-mono inline-flex items-center gap-1"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -42,7 +42,7 @@ export function ExpertiseCard({
             </h3>
           </div>
 
-          <p className="text-text-secondary text-sm max-w-2xl leading-relaxed">
+          <p className="text-text-secondary text-sm max-w-2xl leading-relaxed font-medium font-mono">
             {description}
           </p>
 

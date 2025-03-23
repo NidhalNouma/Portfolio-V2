@@ -4,10 +4,10 @@
 
 @layer base {
   :root {
-    --background-primary: 255 255 255;
+    --background-primary: 200 200 200;
     --background-secondary: 245 245 245;
     --background-accent: 229 229 229;
-    --text-primary: 78 203 133;
+    --text-primary: 30 30 30;
     --text-secondary: 87 82 82;
     --accent-primary: 0 0 0;
   }
@@ -19,6 +19,10 @@
     --text-primary: 117 251 157;
     --text-secondary: 163 163 163;
     --accent-primary: 255 255 255;
+  }
+
+  * {
+    @apply font-sans;
   }
 
   body {

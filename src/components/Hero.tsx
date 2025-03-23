@@ -18,7 +18,7 @@ export function Hero() {
     }, 100);
 
     const handleScroll = () => {
-      const sections = ["about", "experience", "projects"];
+      const sections = ["about", "experience", "projects", "contact"];
       const currentSection = sections.find((section) => {
         const element = document.getElementById(section);
         if (element) {
@@ -50,7 +50,7 @@ export function Hero() {
         <h2 className="text-lg font-medium text-text-secondary mb-4 typing-cursor tracking-tight">
           {/* {typedText} */}Software Developer
         </h2>
-        <p className="text-sm font-semibold max-w-md mb-12 text-text-secondary leading-relaxed">
+        <p className="text-sm font-semibold max-w-md mb-12 text-text-secondary leading-relaxed font-mono">
           I’m passionate about building meaningful <br />
           digital products
         </p>
@@ -89,7 +89,7 @@ export function Hero() {
             <span className="text-text-primary mr-4">03.</span>
             PROJECTS
           </a>
-          {/* <a
+          <a
             href="#contact"
             className={`block transition-colors duration-200 font-mono text-sm ${
               activeSection === "contact"
@@ -99,7 +99,7 @@ export function Hero() {
           >
             <span className="text-text-primary mr-4">04.</span>
             Contact
-          </a> */}
+          </a>
         </nav>
       </div>
       <div className="mt-16">

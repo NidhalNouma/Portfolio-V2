@@ -5,21 +5,25 @@ function AboutMe() {
               <span className="text-text-primary font-mono mr-4">01.</span>
               About Me
             </h2> */}
-      <div className="space-y-4 text-text-secondary">
-        <p className="leading-relaxed">
-          Hello! I'm Nidhal, a software engineer who enjoys creating things that
-          live on the internet. My interest in web development started back in
-          2012 when I decided to try editing custom Tumblr themes — turns out
-          hacking together a custom reblog button taught me a lot about HTML &
-          CSS!
+      <div className="space-y-4 text-text-secondary -mt-4">
+        <p className="leading-relaxed font-mono">
+          Hi! I'm <strong>Nidhal</strong>, a software developer passionate about
+          building <strong>impactful digital experiences</strong> that live on
+          the internet. My journey into web development began in{" "}
+          <strong>2017</strong>, when I created my first website to showcase
+          trading software I had developed sparking a lasting interest in
+          technology and design.
         </p>
-        <p className="leading-relaxed">
-          Fast-forward to today, and I've had the privilege of working at
-          various companies, from startups to corporations. My main focus these
-          days is building accessible, inclusive products and digital
-          experiences for a variety of clients.
+        <p className="leading-relaxed font-mono">
+          Fast-forward to today, and I've had the privilege of collaborating
+          with diverse clients from around the world, constantly expanding my
+          skill set and embracing <strong>new technologies</strong>. Currently,
+          my primary focus is on developing{" "}
+          <strong>meaningful, user centric solutions</strong> that make a
+          positive difference.
         </p>
-        <p className="leading-relaxed">
+
+        <p className="leading-relaxed font-mono">
           Here are a few technologies I've been working with recently:
         </p>
         <ul className="grid grid-cols-2 gap-2 mt-4 font-mono text-sm">
@@ -42,6 +46,14 @@ function AboutMe() {
           <li className="flex items-center">
             <span className="text-text-primary mr-2">▹</span>
             Next.js
+          </li>
+          <li className="flex items-center">
+            <span className="text-text-primary mr-2">▹</span>
+            Python
+          </li>
+          <li className="flex items-center">
+            <span className="text-text-primary mr-2">▹</span>
+            Django
           </li>
           <li className="flex items-center">
             <span className="text-text-primary mr-2">▹</span>

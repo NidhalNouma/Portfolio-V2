@@ -24,21 +24,21 @@ export function ProjectCard({
   return (
     <div className="relative">
       <div className="flex lg:flex-row flex-col-reverse lg:gap-8 gap-4">
-        <div className="mt-0.5">
+        <div className="mt-0.5 w-64">
           <img
             src={image}
             alt={title}
-            className="aspect-video w-32 object-cover rounded-md  border border-text-secondary/10"
+            className="aspect-video w-full object-cover rounded-md  border border-text-secondary/10"
           />
         </div>
-        <div className="grow space-y-4">
+        <div className=" space-y-4">
           <div className="flex items-baseline gap-4">
             <h3 className="text-lg font-bold text-text-primary">
               <a
                 href={link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-accent-primary transition-colors inline-flex items-center gap-2"
+                className="hover:text-accent-primary transition-colors inline-flex items-center gap-2 font-mono"
               >
                 {title} <ExternalLink className="w-4 h-4" />
               </a>
@@ -49,7 +49,9 @@ export function ProjectCard({
               </span>
             )}
           </div>
-          <p className="text-text-secondary text-sm">{description}</p>
+          <p className="text-text-secondary text-sm leading-relaxed font-medium font-mono">
+            {description}
+          </p>
           <div className="flex flex-wrap gap-3">
             {tech.map((t, index) => (
               <span

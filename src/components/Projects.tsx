@@ -22,7 +22,7 @@ const projects: Project[] = [
   {
     title: "IsAlgo",
     description:
-      "Custom website for a trading company built with modern web technologies.",
+      "A platform offering advanced trading strategies integrated with an automated system compatible with multiple forex and cryptocurrency brokers.",
     link: "https://www.isalgo.com",
     image: isalgoImg,
     tech: ["Django", "Postgress", "React", "Tailwind CSS", "AWS"],
@@ -31,7 +31,7 @@ const projects: Project[] = [
   {
     title: "Automated Trader",
     description:
-      "Custom website for a trading company built with modern web technologies.",
+      "A platform designed to seamlessly execute, automate, and replicate trades across multiple trading platforms and brokerages.",
     link: "https://app.automatedtrader.com",
     image: automatedTraderImg,
     tech: ["NextJs", "JavaScript", "Tailwind CSS", "Firebase", "GCloud"],
@@ -40,7 +40,7 @@ const projects: Project[] = [
   {
     title: "DojiBot",
     description:
-      "Custom website for a trading company built with modern web technologies.",
+      "A website offering a specialized Expert Advisor (EA) tailored for seamless integration and automated trading on a specific trading platform.",
     link: "https://doji-ea-web-app-nidhalnouma.vercel.app/",
     image: dojibotImg,
     tech: ["NextJs", "JavaScript", "Tailwind CSS", "Firebase", "Vercel"],
@@ -49,7 +49,7 @@ const projects: Project[] = [
   {
     title: "TalkTime",
     description:
-      "Custom website for a trading company built with modern web technologies.",
+      "A mobile and web application enabling users to engage in real-time voice conversations with randomly matched individuals.",
     link: "#",
     image: talktimeImg,
     tech: ["IonicJs", "ReactJs", "TypeScript", "Tailwind CSS", "GCloud"],
