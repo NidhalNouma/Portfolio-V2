@@ -25,6 +25,10 @@
     @apply font-sans;
   }
 
+  html {
+    @apply bg-background-primary;
+  }
+
   body {
     @apply bg-gradient-radial from-background-primary via-background-secondary to-background-primary text-text-secondary selection:bg-accent-primary/30;
   }
