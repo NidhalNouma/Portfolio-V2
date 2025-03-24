@@ -44,7 +44,7 @@ export function Experience() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section id="experience" className="py-32">
+    <section id="experience" className="py-16">
       <div className="max-w-4xl">
         <h2 className="text-accent-primary font-mono text-sm mb-16 flex items-center">
           {/* <span className="font-mono mr-4">02.</span> */}

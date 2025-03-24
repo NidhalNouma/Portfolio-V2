@@ -7,24 +7,23 @@ import AboutMe from "./components/AboutMe";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gradient-radial from-background-primary via-background-secondary to-background-primary text-text-secondary selection:bg-accent-primary/30">
-      <MouseEffect />
-
+    <div className="w-full min-h-screen mx-auto bg-gradient-radial from-background-primary via-background-secondary to-background-primary text-text-secondary selection:bg-accent-primary/30">
       {/* Main Content */}
-      <div className="lg:flex max-w-full overflow-x-hidden">
+      <div className="lg:flex lg:justify-between w-full">
         {/* Fixed Hero Section on Large Screens */}
-        <div className="lg:w-1/2 lg:fixed lg:top-0 lg:left-0 lg:h-screen">
+        <div className="lg:sticky lg:top-0 lg:max-h-screen">
           <Hero />
         </div>
 
         {/* Scrollable Content */}
-        <div className="lg:w-1/2 lg:ml-[50%] px-6 max-w-2xl">
+        <div className="px-6 lg:w-7/12">
           <AboutMe />
           <Experience />
           <Projects />
           <Contact />
         </div>
       </div>
+      <MouseEffect />
     </div>
   );
 }

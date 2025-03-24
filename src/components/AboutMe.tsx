@@ -5,7 +5,7 @@ function AboutMe() {
               <span className="text-text-primary font-mono mr-4">01.</span>
               About Me
             </h2> */}
-      <div className="space-y-4 text-text-secondary -mt-4">
+      <div className="space-y-4 text-text-secondary ">
         <p className="leading-relaxed font-mono">
           Hi! I'm <strong>Nidhal</strong>, a software developer passionate about
           building <strong>impactful digital experiences</strong> that live on
