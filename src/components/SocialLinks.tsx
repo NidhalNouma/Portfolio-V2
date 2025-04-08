@@ -17,7 +17,7 @@ function SocialLinks() {
         <Github className="w-5 h-5" />
       </a>
       <a
-        href="www.linkedin.com/in/nidhal-nouma"
+        href="https://www.linkedin.com/in/nidhal-nouma"
         target="_blank"
         rel="noopener noreferrer"
         className="text-text-secondary hover:text-text-primary transition-all duration-200"
