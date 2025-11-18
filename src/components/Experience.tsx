@@ -12,7 +12,7 @@ interface Job {
 
 const jobs: Job[] = [
   {
-    date: "2020 — PRESENT",
+    date: "2021 — 2025",
     title: "Software Developer",
     company: "Upwork",
     companyUrl: "https://www.upwork.com",
@@ -21,23 +21,14 @@ const jobs: Job[] = [
     tech: ["JavaScript", "TypeScript", "Python", "HTML", "CSS"],
   },
   {
-    date: "2017 — 2025",
+    date: "2016 — 2021",
     title: "Software Developer",
     company: "Freelancer",
     companyUrl: "https://www.freelancer.com",
     description:
       "Designed and developed web and mobile applications utilizing various frameworks, and built trading software tailored to diverse client requirements.",
     tech: ["Python", "JavaScript", "PHP", "HTML", "CSS", "C++"],
-  },
-  {
-    date: "2016 — 2019",
-    title: "Software Developer",
-    company: "Fiverr",
-    companyUrl: "https://www.fiverr.com",
-    description:
-      "Developed and optimized trading software across multiple trading platforms and APIs for diverse clients.",
-    tech: ["MQ4", "MQ5", "PineScript", "C++"],
-  },
+  }
 ];
 
 export function Experience() {

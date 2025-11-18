@@ -31,7 +31,7 @@ function SocialLinks() {
         <Mail className="w-5 h-5" />
       </a>
       <a
-        href="/resume.pdf"
+        href="/Portfolio-V2/resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-text-secondary hover:text-text-primary transition-all duration-200"
