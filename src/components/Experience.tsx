@@ -22,7 +22,7 @@ const jobs: Job[] = [
   },
   {
     date: "2016 — 2021",
-    title: "Software Engenieer",
+    title: "Software Engineer",
     company: "Talktime Technology",
     companyUrl: "",
     description:
