@@ -10,7 +10,7 @@ function AboutMe() {
           Hi! I'm <strong>Nidhal</strong>, a software developer passionate about
           building <strong>impactful digital experiences</strong> that live on
           the internet. My journey into web development began in{" "}
-          <strong>2017</strong>, when I created my first website to showcase
+          <strong>2016</strong>, when I created my first website to showcase
           trading software I had developed sparking a lasting interest in
           technology and design.
         </p>
@@ -37,7 +37,7 @@ function AboutMe() {
           </li>
           <li className="flex items-center">
             <span className="text-text-primary mr-2">▹</span>
-            React
+            React.js
           </li>
           <li className="flex items-center">
             <span className="text-text-primary mr-2">▹</span>
@@ -57,7 +57,15 @@ function AboutMe() {
           </li>
           <li className="flex items-center">
             <span className="text-text-primary mr-2">▹</span>
+            Docker
+          </li>
+          <li className="flex items-center">
+            <span className="text-text-primary mr-2">▹</span>
             Tailwind CSS
+          </li>
+          <li className="flex items-center">
+            <span className="text-text-primary mr-2">▹</span>
+            DaisyUI
           </li>
         </ul>
       </div>

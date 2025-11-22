@@ -12,22 +12,22 @@ interface Job {
 
 const jobs: Job[] = [
   {
-    date: "2021 — 2025",
+    date: "2021 — Present",
     title: "Software Developer",
-    company: "Upwork",
-    companyUrl: "https://www.upwork.com",
+    company: "TradeSync",
+    companyUrl: "",
     description:
-      "Designed and developed web applications using various frameworks, integrated diverse APIs, and collaborated on AI agent implementations for multiple clients.",
-    tech: ["JavaScript", "TypeScript", "Python", "HTML", "CSS"],
+      "Developed and maintained web applications and APIs using Python frameworks such as Django and FastAPI. Collaborated with cross-functional teams to deliver scalable solutions and enhance user experience.",
+    tech: ["Python", "Django", "FastAPI", "React.js", "Docker"],
   },
   {
     date: "2016 — 2021",
-    title: "Software Developer",
-    company: "Freelancer",
-    companyUrl: "https://www.freelancer.com",
+    title: "Software Engenieer",
+    company: "Talktime Technology",
+    companyUrl: "",
     description:
-      "Designed and developed web and mobile applications utilizing various frameworks, and built trading software tailored to diverse client requirements.",
-    tech: ["Python", "JavaScript", "PHP", "HTML", "CSS", "C++"],
+      "Led the development of real-time communication applications using JavaScript and WebRTC technologies. Implemented robust backend services with Node.js and Socket.io to support high concurrency and low latency requirements.",
+    tech: ["JavaScript", "TypeScript", "React.js", "Next.js", "Socket.io", "WebRTC"],
   }
 ];
 

@@ -1,7 +1,14 @@
 % !TEX root = Nidhal_Nouma.tex  
 
 \documentclass[letterpaper,11pt]{article}
-\usepackage{helvet}
+\usepackage{titlesec}
+
+\titleformat{\section}
+  {\normalfont\fontsize{12pt}{14pt}\selectfont\bfseries} % formatting
+  {} % no numbering label
+  {0pt}
+  {} % no underline code
+\titlespacing*{\section}{0pt}{18pt}{6pt} 
 
 \usepackage[T1]{fontenc}
 \usepackage{latexsym}
@@ -13,6 +20,8 @@
 \usepackage{enumitem}
 \usepackage[pdftex]{hyperref}
 \usepackage{fancyhdr}
+\usepackage{tabularx}
+\usepackage{ragged2e}
 
 
 \pagestyle{fancy}
@@ -34,10 +43,6 @@
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 %-------------------------
 % Custom commands
@@ -47,22 +52,19 @@
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
-  \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+\newcommand{\resumeSubheading}[2]{%
+  \item[] % empty label -> no dot
+    \textbf{#1} \hfill #2\par\vspace{2pt}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListStart}{}
+\newcommand{\resumeItemListEnd}{\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -72,75 +74,96 @@
 \begin{document}
 
 %----------HEADING-----------------
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\href{https://nidhalnouma.github.io/Portfolio-V2/}{\Large Nidhal Nouma}} & Email : \href{mailto:nidhal.nouma.0@gmail.com}{nidhal.nouma.0@gmail.com}\\
-  \href{https://www.linkedin.com/in/nidhal-nouma/}{Linkedin.com/in/nidhal-nouma} & Mobile : +1 (813) 859-1848 \\\href{https://github.com/NidhalNouma}{github.com/NidhalNouma} 
-  & Lutz, FL
+\begin{center}
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r}
+  \textbf{Nidhal Nouma} 
+  & (813) 859-1848 
+  & nidhal.nouma.0@gmail.com
 \end{tabular*}
+\end{center}
 
+\vspace*{-10pt} % FORCE spacing ABOVE the line
+\rule{\textwidth}{0.1pt}
+\vspace*{-20pt}  % FORCE spacing BELOW the line
 
 %-----------Profile-----------------
-\section*{Objectives}
+\section{\textbf{\fontsize{12pt}{14pt}\selectfont Objectives}} 
 
 \begin{flushleft}
+    \begin{justify}
       {To join a dynamic team in Software Development and/or Technology that allows me to leverage my skills, education, and creativity, aiming to contribute to impactful projects while continuously enhancing my technical expertise and professional growth within the industry.}
+    \end{justify}
 \end{flushleft}
 
 
 %-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
+\section{\textbf{\fontsize{12pt}{14pt}\selectfont Education}} 
+  \resumeSubHeadingListStart 
     \resumeSubheading
-      {ESSTHS University}{}
-      {Bachelor's degree in Electronics and Automation Engineering}{Jun. 2016}
+      {University of Sousse}{\textbf{Jun. 2016}}
+        \begin{itemize}
+            \item {Bachelor of Science in Electronics and Automation Engineering}
+          \end{itemize}
   \resumeSubHeadingListEnd
 
 
 %-----------EXPERIENCE-----------------
-\section{Professional Experience}
-  \resumeSubHeadingListStart
+\section{\textbf{\fontsize{12pt}{14pt}\selectfont Experience}}  \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Upwork Global LLC}{}
-      {Software Developer}{Mar 2021 - Oct 2025}
+      {TradeSync, Inc./ Software Developer}{\textbf{Mar 2021 - Oct 2025}}
      \begin{itemize}
       \item
-          {Optimized web applications and trading platform software for performance and scalability, resulting in improved response times and increased user engagement.} 
+          \begin{justify}
+          {Developed and maintained a web application and APIs using Python frameworks such as Django and FastAPI to support the integration of various trading platforms and services.} 
+          \end{justify}
+      \item
+          \begin{justify}
+          {Implemented user-friendly front-end interfaces using React.js to enhance user experience and facilitate seamless interaction with trading tools and features.} 
+          \end{justify}
           
       \item
-          { Developed custom trading algorithms and automated trading systems to improve trading performance and reduce risk.} 
+          \begin{justify}
+          {Developed and implemented AI agents to automate trading strategies and improve decision-making processes for traders using LangGraph and other AI frameworks.} 
+          \end{justify}
           
       \item
-          {Worked with traders and compliance teams to ensure software solutions comply with regulatory requirements and industry best practices.} 
+          \begin{justify}
+          {Collaborated with traders and compliance teams to ensure all software solutions adhered to regulatory standards and industry best practices.} 
+          \end{justify}
           
       \item
-          {Collaborated with third-party vendors to integrate their solutions into web applications and trading platforms, ensuring seamless user experience and functionality.} 
+          \begin{justify}
+          {Stayed up-to-date with the latest trends and technologies in web development, AI, and trading to continuously improve the platform's capabilities and performance.} 
+          \end{justify}
           
      \end{itemize}
     % Click \href{https://www.upwork.com/freelancers/nidhalnouma}{\underline{here}} or visit the URL below to check my profile:\newline
     % https://www.upwork.com/freelancers/nidhalnouma
 
  \resumeSubheading
-      {Freelancer Technology}{}
-      {Software Developer}{Jul 2016 - Feb 2021}
+      {Talktime Technology, LLC/ Software Engineer}{\textbf{Jul 2016 - Feb 2021}}
      \begin{itemize}
       \item
-          {Developed and maintained web applications using HTML, CSS, JavaScript, React, NextJs, Node.js, Express, MongoDB, MySQL, PHP, Python, Docker, AWS, google cloud, firebase, and more to meet or exceed user expectations.} 
+          \begin{justify}
+          {Developed and maintained real-time communication applications using JavaScript, React.js, Node.js, and WebRTC technologies.} 
+          \end{justify}
           
       \item
-          {Worked on the development of trading platform software that incorporates algorithmic trading, data analysis, and risk management features using a C++ extension.} 
+          \begin{justify}
+          {Implemented robust backend services with Node.js and Socket.io to support high concurrency and low latency requirements.} 
+          \end{justify}
           
       \item
-          {Designed and implemented RESTful APIs to integrate third-party services into trading platforms and web applications.} 
+          \begin{justify}
+          {Optimized application performance and scalability through code refactoring, database indexing, and load balancing techniques.} 
+          \end{justify}
           
       \item
-          {Collaborated with cross-functional teams, including designers, project managers, and traders to ensure the delivery of high-quality and user-friendly software products.} 
-          
-      \item
-          {Contributed to the development of web development and trading platform software best practices and helped mentor junior developers.} 
-          
-      \item
-          {Stayed up-to-date with the latest trends and technologies in web development and trading platform software development to ensure the use of the most efficient and effective solutions.} 
+          \begin{justify}
+          {Collaborated with cross-functional teams including designers and product managers to deliver high-quality software solutions.} 
+          \end{justify}
+
           
      \end{itemize}
     % Click \href{https://www.freelancer.com/u/nidhalnouma}{\underline{here}} or visit the URL below to check my profile:\newline
@@ -150,57 +173,27 @@
   \resumeSubHeadingListEnd
   
 %--------PROGRAMMING SKILLS------------
-\section{Programming Skills}
-% \resumeSubHeadingListStart
- 
-\begin{itemize}
-   \item{
-     \textbf{Languages:}
-     \newline{Javascript, TypeScript, Python, C++, PHP, Bash}
-     \newline{Swift, Dart, MQL, Pinescript}
-     \newline{SQL, NoSQL}
-     \newline{HTML, Jinja, CSS, SCSS, SASS}
-   }
-   
-   \item{
-     \textbf{Technologies:}
-     \newline{NodeJs, NextJs, ReactJs, ReduxJs, VueJs, chartJs, socket.io}
-     \newline{Django, Flask, FastAPI, Laravel}
-     \newline{LangGraph, LangChain}
-     \newline{Tailwindcss, Material-UI, Bootstrap, Bulma}
-     \newline{MySQL, Postgress, MongoDB, DynamoDB, Firebase, Supabase}
-     \newline{RESTful API, GraphQL}
-     \newline{Linux, Docker, CI/CD, Git}
-     \newline{AWS, Google Cloud, Firebase, Vercel, Netlify, Heroku, Linode}
-   }
-\end{itemize}
- % \resumeSubHeadingListEnd
-
-% % -----------PROJECTS-----------------
-% \section{Selected projects}
-%   \resumeSubHeadingListStart
-%  \resumeSubItem{\href{https://tero.isalgo.com}{\underline{Tero}}}
-%      {An app that helps traders access market information and receive personalized suggestions powered by AI models and intelligent agents.}\\
-     
-% \resumeSubItem{\href{https://www.isalgo.com}{\underline{isalgo.com}}}
-%      {A website that offers trading strategies, provides a platform for users to share their trading results, and enables automated trading across multiple brokers and exchanges.}\\
-     
-% \resumeSubItem{\href{https://app.automatedtrader.com}{\underline{automatedtrader.com}}}
-%      {A website designed to automate notification alerts from the TradingView platform and send them to a broker for execution.}\\
-     
-% \resumeSubItem{\href{https://dojibot.com}{\underline{dojibot.com}}}
-%      {Website to gather subscriptions and keep track of the products.}\\
-     
-% \resumeSubItem{\href{https:talktime.us}{\underline{talktime.us}}}
-%      {Web app that randomly connects people through audio calls and gathers feedback from anonymous users.}\\
-     
-% \resumeSubItem{\href{https://looksyummyapp.com}{\underline{looksyummyapp.com}}}
-%      {I worked on the backend as well as mobile development of the "looksyummy" app. It is a social app designed for restaurants to share meals and plans.}
-
-      
-%     % \resumeSubItem{\href{https://handsfree.dominateforex.info}{\underline{dominateforex.info}}}
-%     %   {A basic website to collect subscriptions and sell digital products with an admin section.}
-%   \resumeSubHeadingListEnd
+\section{\textbf{\fontsize{12pt}{14pt}\selectfont Skills}} 
+\resumeSubHeadingListStart
+     \begin{itemize}
+      \item
+          \begin{justify}
+          {\textbf{Programming languages}: Python, Javascript, TypeScript, C++, PHP, Swift, Dart, MQL, PineScript, EasyLanguage} 
+          \end{justify}
+      \item
+          \begin{justify}
+          {\textbf{Databases}: MySql, Posstgress, MongoDb, Firebase, Sql, NoSql} 
+          \end{justify}
+      \item
+          \begin{justify}
+          {\textbf{DevOps}: Docker, Git, GithubActions, Linux, Bash} 
+          \end{justify}
+      \item
+          \begin{justify}
+          {\textbf{Cloud}: AWS, GoogleCloud, Azure} 
+          \end{justify}
+    \end{itemize}
+ \resumeSubHeadingListEnd
 
 %-----------Profile-----------------
 \section*{References}
@@ -211,4 +204,11 @@
 
 %-------------------------------------------
 \end{document}     
+
+
+% Collaborate effectively with other team members to accomplish shared user story and sprint goals;
+% Invest time in constant professional development to stay up to date with new technological development and programming languages;
+% Write good and well-tested code
+% Excellent communication skills
+% Willing to learn new skills and technologies
 
